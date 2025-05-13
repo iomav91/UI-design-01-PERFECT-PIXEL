@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        @keyframes spin-around {
+            from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .orbit {
+            animation: spin 5s linear infinite;
+        }
+
+        @keyframes raindrop {
+            0% { transform: translateY(100%); }
+            50% { transform: translateY(-50vh); }
+            100% { transform: translateY(-100%); }
+        }
+
+    </style>
+</head>
+<body class="overflow-x-hidden">
+  
+  <header class="bg-[url('2025_design-part-1.png')] bg-contains bg-no-repeat bg-center w-full h-[1394px] hidden md:block">
+    <div class="flex flex-row justify-between">
+        <div class="mt-[154px] ml-[calc(192/1366*100vw)] w-1/2">
+            <h1 class="text-[#f7f6fd] text-8xl font-semibold tracking-wide">LET'S <span class="text-[#eeebfe]">BUILD</span> SMART <span class="text-[#cec6f8]">THING</span></h1>
+            <div class="flex items-center mt-8 left-[calc(188/1366*100vw)]">
+                <button class="hover:px-1">
+                    <img src="2025_design-button-blue.png" alt="button blue">
+                </button>
+                <button class="hover:px-1">
+                    <img src="icons/2025_design-5-lets-talk-pointer.png" alt="button pointer">
+                </button>
+            </div>
+        </div>
+
+        <nav class="fixed mt-[117px] left-[calc(1090/1366*100vw)] top-0 z-50">
+            <ul class="flex flex-col gap-2 leading-tight tracking-wide">
+                <li>
+                    <a href="#works" class="block tracking-widest text-xs font-thin text-[#a7a2b2] hover:text-white hover:translate-x-1 transition-colors">Works</a>
+                </li>
+                <li>
+                    <a href="#services" class="block tracking-widest text-xs font-thin text-[#a7a2b2] hover:text-white hover:translate-x-1 transition-colors">Services</a>
+                </li>
+                <li>
+                    <a href="#about" class="block tracking-widest text-xs font-thin text-[#a7a2b2] hover:text-white hover:translate-x-1 transition-colors">About</a>
+                </li>
+                <li>
+                    <a href="#team" class="block tracking-widest text-xs font-thin text-[#a7a2b2] hover:text-white hover:translate-x-1 transition-colors">Team</a>
+                </li>
+                <li class="flex items-center mt-4">
+                    <a href="#contact" class="flex fixed items-center tracking-widest text-xs font-thin text-[#a7a2b2] hover:text-white hover:translate-x-1 transition-colors">
+                        Let's talk
+                        <img src="icons/2025_design-4-scroll-down.png" alt="nav bar lets talk pointer" class="h-[calc(auto/768*100vh)] w-[calc(auto/1024*100vw)] rotate-[-45deg]">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="hero-objects" class="relative">
+        <img 
+            src="icons/2025_design-2.png" 
+            alt="apple alt" 
+            class="absolute h-[389px] w-[394px] orbit top-4 right-[calc(488/1366*100vw)]"
+        >
+        <img 
+            src="icons/2025_design-0.png" 
+            alt="" 
+            class="absolute h-auto w-auto top-2 left-[calc(974/1366*100vw)] animate-[raindrop_5s_ease-in_forwards]"
+        >
+        <img 
+            src="icons/2025_design-1.png" 
+            alt="" 
+            class="absolute h-auto w-auto top-[6rem] left-[calc(236/1366*100vw)]"
+        >
+        <img 
+            src="icons/2025_design-3.png" 
+            alt="lets talk button alt" 
+            class="absolute h-auto w-auto orbit top-[18rem] left-[calc(162/1366*100vw)] rotate-360"
+        >
+        <a 
+            href="#" 
+            class="absolute flex flex-col gap-1 items-center top-[6rem] left-[calc(1144/1366*100vw)] animate-bounce"
+        >
+            <span class="[writing-mode:vertical-rl] tracking-widest text-xs font-extrathin text-[#a7a2b2] hover:text-white">
+                Scroll down
+            </span>
+            <img 
+                src="icons/2025_design-4-scroll-down.png" 
+                alt="scroll down pointer" 
+                class="h-[calc(auto/768*100vh)] w-[calc(auto/1024*100vw)]"
+            >
+        </a>
+        <div class="absolute ml-12 top-[15rem] left-[calc(916/1366*100vw)] text-[#adaeb5] text-xs h-[90px] w-[257px] leading-snug tracking-wide">
+            <h3>Smalltribe is a branding and digital<br>design boutique studio that creates<br>products,services, and experiences<br>for good companies.</h3>
+        </div>
+      </div>
+      <div class="mt-[45rem]">
+        <div class="flex flex-col items-center space-y-8">
+          <div class="flex flex-row items-center space-x-4 animate-fade-in">
+            <img src="2025_design-mode-icon-alt.png" alt="" class="w-15 h-10 rounded-md">
+            <img src="2025_design-legalzoom-icon-alt-1.png" alt="" class="w-15 h-10 rounded-md">
+            <img src="2025_design-autodesk-icon.png" alt="" class="w-15 h-10 rounded-md">
+            <img src="2025_design-descript-icon.png" alt="" class="w-15 h-10 rounded-md">
+            <img src="2025_design-deepgram-icon-1.png" alt="" class="w-15 h-10 rounded-md">
+          </div>
+          <div class="flex flex-row items-center space-x-4 animate-fade-in">
+            <img src="2025_design-intercom-icon-1.png" alt="" class="w-15 h-10 rounded-md">
+            <img src="2025_design-mosaic-icon.png" alt="" class="w-15 h-10 rounded-md">
+            <img src="2025_design-mode-icon-alt.png" alt="" class="w-15 h-10 rounded-md">
+            <img src="2025_design-replicant-icon.png" alt="" class="w-15 h-10 rounded-md">
+            <img src="2025_design-canopy-icon.png" alt="" class="w-15 h-10 rounded-md">
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <header class="relative bg-[url('2025_design-part-1.png')] bg-contains bg-no-repeat bg-center w-auto h-[1394px] md:hidden">
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden fixed top-0 w-full bg-[#0a0d23] z-50 px-4 py-6">
+      <div class="flex justify-between items-center">
+        <h3 class="text-[#f7f6fd] text-5xl font-semibold tracking-wide">LET'S BUILD SMART THING</h3>
+        <button class="text-white" id="mobile-menu-button">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+      </div>
+      <div class="hidden" id="mobile-menu">
+        <div class="py-4 space-y-4">
+            <a href="#works" class="block text-white hover:text-gray-300">Works</a>
+            <a href="#services" class="block text-white hover:text-gray-300">Services</a>
+            <a href="#about" class="block text-white hover:text-gray-300">About</a>
+            <a href="#team" class="block text-white hover:text-gray-300">Team</a>
+            <a href="#contact" class="block text-white hover:text-gray-300">Let's talk</a>
+        </div>
+      </div>
+    </nav>
+    <div class="md:hidden py-42 w-full z-50 px-4 py-6">
+      <div class="flex flex-row">
+        <div class="flex flex-col">
+          <img 
+            src="icons/2025_design-2.png" 
+            alt="apple alt" 
+            class="h-auto w-auto orbit"
+          >
+          <div class="flex flex-row items-center mt-20 w-full">
+            <div class="flex flex-col">
+              <div class="text-[#adaeb5] text-lg h-auto w-auto leading-loose tracking-widest">
+                <h2>Smalltribe is a branding and digital<br>design boutique studio that creates<br>products,services, and experiences<br>for good companies.</h2>
+              </div>
+              <div class="flex items-center mt-8 left-[calc(188/1366*100vw)]">
+                <button class="hover:px-1">
+                  <img src="2025_design-button-blue.png" alt="button blue">
+                </button>
+                <button class="hover:px-1">
+                  <img src="icons/2025_design-5-lets-talk-pointer.png" alt="button pointer">
+                </button>
+              </div>
+            </div>
+            <a href="#" class="animate-bounce ml-10">
+              <span class="[writing-mode:vertical-rl] tracking-widest text-xs font-extrathin text-[#a7a2b2] hover:text-white">
+                Scroll down
+              </span>
+              <img 
+                src="icons/2025_design-4-scroll-down.png" 
+                alt="scroll down pointer" 
+                class="h-[calc(auto/768*100vh)] w-[calc(auto/1024*100vw)]"
+              >
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="mt-[25rem]">
+      <div class="flex flex-col items-center space-y-8">
+        <div class="flex flex-row items-center space-x-4 animate-fade-in">
+          <img src="2025_design-mode-icon-alt.png" alt="" class="w-[4rem] h-9 rounded-md">
+          <img src="2025_design-legalzoom-icon-alt-1.png" alt="" class="w-[5.25rem] h-9 rounded-md">
+          <img src="2025_design-autodesk-icon.png" alt="" class="w-[4rem] h-9 rounded-md">
+          <img src="2025_design-descript-icon.png" alt="" class="w-[4rem] h-9 rounded-md">
+          <img src="2025_design-deepgram-icon-1.png" alt="" class="w-[5rem] h-9 rounded-md">
+          
+        </div>
+        <div class="flex flex-row items-center space-x-4 animate-fade-in">
+          
+          <img src="2025_design-intercom-icon-1.png" alt="" class="w-[4rem] h-9 rounded-md">
+          <img src="2025_design-mosaic-icon.png" alt="" class="w-[4rem] h-9 rounded-md">
+          <img src="2025_design-mode-icon-alt.png" alt="" class="w-[4rem] h-9 rounded-md">
+          <img src="2025_design-replicant-icon.png" alt="" class="w-[4rem] h-9 rounded-md">
+          <img src="2025_design-canopy-icon.png" alt="" class="w-[4rem] h-9 rounded-md">
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+  <main class="bg-[url('2025_design-part-2.png')] bg-contains bg-no-repeat bg-center w-full h-[1726px] hidden md:block">
+      <div class="flex flex-col">
+        <div class="flex flex-row items-end space-x-72">
+          <h1 class="mt-28 ml-[calc(192/1366*100vw)] text-[#f7f6fd] text-6xl font-bold">SERVICES WE OFFER</h1>
+          <div class="flex flex-row gap-2 px-8">
+            <button class="hover:px-1">
+              <img src="2025_design-button-right-pointer.png" alt="button right pointer" class="h-[41px] w-[40px] rounded-full mt-20 hover:-translate-x-1">
+            </button>
+            <button class="hover:px-1">
+              <img src="2025_design-button-left-pointer.png" alt="button left pointer" class="h-[41px] w-[40px] rounded-full mt-20 hover:translate-x-1">
+            </button>
+          </div>
+          
+        </div>
+        
+        <div class="flex flex-row items-center space-x-4">
+        
+          <div class="w-[534px] h-[382px] mt-12 ml-[calc(192/1366*100vw)] bg-gradient-to-br from-[#271f5a] to-[#0a0d23] rounded-xl shadow-lg border-2 border-t-[#0a0d23] border-l-[#0a0d23] border-r-[#271f5a] border-b-[#271f5a]">
+          <!-- Card Header -->
+            
+            <div class="h-30 flex flex-row items-start justify-between space-x-32 p-6">
+              <h2 class="text-4xl font-bold text-white">WEB DESIGN</h2>
+              <img src="2025_design-services-img-1.png" alt="" class="w-auto h-auto">
+            </div>
+          
+
+            <div class="h-50 flex flex-row items-start justify-between space-x-12 mt-12">
+              <!-- Card Content -->
+            <div class="px-6 py-12 w-2/3">
+              <p class="text-[#a7a2b2]">
+                  Elevate your online presence<br>with our expert web design<br>services for stunning, functional<br>websites.
+              </p>
+            </div>
+          
+            <!-- Card Footer -->
+            <div class="px-6 py-24">
+              <button class="hover:px-1">
+                <img src="2025_design-discover-button.png" alt="button blue">
+              </button>
+            </div>
+            
+            </div>
+          </div>
+          <div class="w-[534px] h-[382px] mt-12 bg-gradient-to-br from-[#271f5a] to-[#0a0d23] rounded-xl shadow-lg border-2 border-t-[#0a0d23] border-l-[#0a0d23] border-r-[#271f5a] border-b-[#271f5a]">
+            <!-- Card Header -->
+            <div class="h-30 flex flex-row items-start justify-between space-x-32 p-6">
+              <h2 class="text-4xl font-bold text-white">BRANDING</h2>
+              <img src="icons/2025_design-services-img-2.png" alt="" class="w-auto h-auto">
+            </div>
+            
+            <div class="h-50 flex flex-row items-start justify-between space-x-12 mt-12">
+              <!-- Card Content -->
+            <div class="px-6 py-16 w-2/3">
+              <p class="text-[#a7a2b2]">
+                  Develop your brand with our<br>comprehensive and innovative<br>branding services for lasting<br>impressions.
+              </p>
+            </div>
+          
+            <!-- Card Footer -->
+            <div class="px-6 py-28">
+              <button class="hover:px-1">
+                <img src="icons/2025_design-5-lets-talk-pointer.png" alt="button blue" class="h-[41px] w-[40px]">
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex flex-row items-end space-x-72">
+            <h1 class="mt-28 ml-[calc(192/1366*100vw)] text-[#f7f6fd] text-6xl font-bold">OUR FEATURED<br>WORKS.</h1>
+            <div class="flex flex-row items-center px-10">
+              <img src="2025_design-explore-works-button.png" alt="button right pointer" class="h-auto w-auto rounded-full mt-20 hover:-translate-x-1">
+              <img src="2025_design-explore-works-pointer-button.png" alt="button left pointer" class="h-auto w-auto rounded-full mt-20 hover:translate-x-1">
+            </div>
+          </div>
+          <div class="flex flex-row items-start space-x-24 space-y-8">
+            <img src="2025_design-word-icon-card-1.png" alt="" class="h-auto w-auto mt-20 ml-[calc(192/1366*100vw)]">
+            <div class="flex flex-col items-start">
+              <div class="mt-12 space-y-8">
+                <h2 class="text-[#f7f6fd] text-5xl font-bold ml-12">AGENCY<br>WEBSITE</h2>
+                <p class="text-[#cec6f8] ml-12">Research, UI/UX Design,</p>
+                <div class="flex flex-row ml-12">
+                  <button class="hover:px-1">
+                    <img src="2025_design-view-project-button.png" alt="button blue" class="h-[50px] w-[141px]">
+                  </button>
+                  <button class="hover:px-1">
+                    <img src="2025_design-view-project-pointer-button.png" alt="button blue" class="h-[51px] w-[52px]">
+                  </button>
+                </div>
+                <div class="flex flex-row items-center space-x-8">
+                  <div class="flex flex-col">
+                    <p class="text-[#a7a2b2] text-sm mt-8">We undertook meticulous UX<br>research, improved the overall<br>user experience, designed visual<br>mockups for every page with our<br>design system, and produced<br>functional prototypes.</p>
+                    <div class="flex flex-row space-x-2">
+                      <button class="hover:px-1">
+                        <img src="2025_design-button-right-pointer.png" alt="button right pointer" class="h-[41px] w-[40px] rounded-full mt-12 hover:-translate-x-1">
+                      </button>
+                      <button class="hover:px-1">
+                        <img src="2025_design-button-left-pointer.png" alt="button left pointer" class="h-[41px] w-[40px] rounded-full mt-12 hover:translate-x-1">
+                      </button>
+                    </div>
+                  </div>
+                  <img src="2025_design-work-icon-2.png" alt="woman computer" class="mt-8">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <div class="bg-[url('2025_design-part-2.png')] bg-contains bg-no-repeat bg-center w-auto h-[1726px] md:hidden">
+
+  </div>
+  <footer class="bg-[url('2025_design-part-3.png')] bg-contains bg-no-repeat bg-center w-full h-[1419px] hidden md:block">
+    <div class="flex flex-row items-start space-x-60">
+      <div class="flex flex-col ml-[calc(192/1366*100vw)]">
+        <h2 class="mt-20 text-[#f7f6fd] text-4xl font-bold">QUOTES<br>FROM FOLKS</h2>
+        <div class="flex flex-row space-x-4">
+          <button class="hover:px-1">
+            <img src="2025_design-button-right-pointer.png" alt="button right pointer" class="h-[41px] w-[40px] rounded-full mt-20 hover:-translate-x-1">
+          </button>
+          <button class="hover:px-1">
+            <img src="2025_design-button-left-pointer.png" alt="button left pointer" class="h-[41px] w-[40px] rounded-full mt-20 hover:translate-x-1">
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <blockquote class="mt-24">
+          <p class="text-[#f8f8fe] text-2xl tracking-widest leading-snug">"I was planning a rebranding for my<br>company and got help from Smalltribe.<br>They are an incredibly talented person<br>and I am incredibly glad that I turned to<br>them with my concerns."</p>
+          <div class="flex flex-row items-center gap-2 mt-12">
+            <img src="2025_design-cler-de-boer.png" alt="">
+            <cite class="flex flex-col">
+              <span class="text-[#f7f6fd] text-sm">Clare de boer</span>
+              <span class="text-[#cec6f8] text-xs">Inclusive web design engineer</span>
+            </cite>
+          </div>
+        </blockquote>      
+      </div>
+    </div>
+    <img src="icons/2025_design-ring.png" alt="" class="h-auto w-auto mt-40 ml-[calc(1101/1366*100vw)] orbit">
+    <div class="flex flex-col">
+      <div class="flex flex-row items-start">
+        <h1 class="mt-28 ml-[calc(192/1366*100vw)] text-[#f7f6fd] text-6xl font-bold">WE'D LOVE<br>TO HEAR</h1>
+        
+        <div class="mt-48 border-b border-white w-[444px]">
+          <div class="flex flex-row items-center justify-between">
+            <input placeholder="Email Address" id="email" type="text" class="bg-transparent">
+            <button id="submit-btn" class="text-white" type="submit">(Send)</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row mt-20 ml-[calc(192/1366*100vw)] items-center">
+        <div class="flex flex-row items-center gap-8">
+          <img src="icons/2025_design-woman.png" alt="woman computer" class="">
+          <h6 class="text-xs text-[#cec6f8]">Have a project in mind or just<br>want more information? Don't<br>hesitate to reach out.</h6>
+        </div>
+        
+        <div class="flex flex-row items-center space-x-60">
+          <img src="icons/2025_design-xandra.png" alt="" class="w-[71px] h-[70px] mt-24 ml-36 animate-bounce">
+          <h1 class="text-[#f7f6fd] text-6xl font-bold">FROM<br><span class="text-[#cec6f8]">YOU</span></h1>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="bg-[url('2025_design-part-3.png')] bg-contains bg-no-repeat bg-center w-auto h-[1419px] md:hidden">
+
+  </footer>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-in': 'fadeIn 3s ease-in'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>

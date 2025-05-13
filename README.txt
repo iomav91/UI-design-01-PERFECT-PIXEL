@@ -1,0 +1,1 @@
+Prefered Browsers: Avast Secure, Google Chrome
